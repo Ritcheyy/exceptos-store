@@ -1,4 +1,4 @@
-# vuecomm
+# Swags Store
 
 ## Project setup
 ```

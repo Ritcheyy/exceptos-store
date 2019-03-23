@@ -1,4 +1,12 @@
 # Swags Store
+<br>Swag store is a basic e-commerce PWA,<br>
+                  Built with VueJS, Vuetify, VueX and Firebase...<br>
+                  <br>
+                  <b>Please note that all products, prices and pictures are dummies...</b><br>
+
+## Screenshots
+![Screenshot 1](https://raw.githubusercontent.com/RitcheyDevs/swag-store/master/public/static/Nexus_5X.png)
+
 
 ## Project setup
 ```

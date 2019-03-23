@@ -6,6 +6,8 @@
 
 ## Screenshots
 <img src="https://raw.githubusercontent.com/RitcheyDevs/swag-store/master/public/static/Nexus_5X.png" alt="Screenshot" width="400"/>
+<img src="https://raw.githubusercontent.com/RitcheyDevs/swag-store/master/public/static/screenshot2.png" alt="Screenshot" width="400"/>
+<img src="https://raw.githubusercontent.com/RitcheyDevs/swag-store/master/public/static/screenshot3.png" alt="Screenshot" width="400"/>
 
 
 ## Project setup

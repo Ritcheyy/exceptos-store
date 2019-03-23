@@ -5,7 +5,7 @@
                   <b>Please note that all products, prices and pictures are dummies...</b><br>
 
 ## Screenshots
-![Screenshot 1](https://raw.githubusercontent.com/RitcheyDevs/swag-store/master/public/static/Nexus_5X.png)
+<img src="https://raw.githubusercontent.com/RitcheyDevs/swag-store/master/public/static/Nexus_5X.png" alt="Screenshot" width="400"/>
 
 
 ## Project setup

@@ -4,17 +4,15 @@
                   <v-container style="text-align: center">
                   <v-flex shrink>
                         <img alt="Vue logo" src="../assets/logo.png">
-                        <h2 class="text-center">Swags Store</h2>
+                        <h2 class="text-center">Exceptos Swags Store</h2>
                   </v-flex>
-                  <br>Swag store is a basic e-commerce PWA,<br>
+                  <br>Exceptos Swag store is a basic opensource e-commerce PWA,<br>
                   Built with VueJS, Vuetify, VueX and Firebase...<br>
                   <br>
                   Please note that all products, prices and pictures are dummies...<br>
                   <br>
+                        <h4><router-link to="/login">Login</router-link> to see all products...</h4>
                   <br>
-                  <a href="https://github.com/RitcheyDevs/swag-store">Github:
-                        https://github.com/RitcheyDevs/swag-store</a><br>
-                  Star, Fork, Pull and Contribute<br>
                   <br>
                   </v-container>
             </v-layout>

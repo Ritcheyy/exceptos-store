@@ -42,7 +42,7 @@
 
 <style>
       .application {
-            font-family: Ubuntu !important;
+            font-family: 'Ubuntu', sans-serif !important;
       }
 
       .content {

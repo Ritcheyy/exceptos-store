@@ -1,77 +1,95 @@
 <template>
-      <v-container fluid fill-height class="login">
-            <v-layout class="pa-3" justify-center column>
-                  <v-flex align-self-center shrink>
-                        <img alt="Vue logo" width="80px" class="logo" src="../../assets/logo.png">
-                  </v-flex>
-                  <transition name="fade" mode="out-in" :duration="300">
-                        <v-form v-if="showLogin" key="login" @submit.prevent="login">
-                              <v-layout column>
-                                    <v-flex>
-                                          <v-text-field prepend-icon="person" label="Email" v-model="loginUser.email"
-                                                        required></v-text-field>
-                                    </v-flex>
-                                    <v-flex>
-                                          <v-text-field type="password" prepend-icon="lock" label="Password"
-                                                        v-model="loginUser.password" required></v-text-field>
-                                    </v-flex>
-                                    <br>
-                                    <v-btn type="submit" color="primary" block>
-                                          Login
-                                    </v-btn>
-                                    <!--<br>-->
-                                    <v-layout row>
-                                          <v-flex></v-flex>
-                                          <v-spacer></v-spacer>
-                                          <v-flex shrink>
-                                                <v-btn flat justify-end color="primary"
-                                                       @click="showLogin = !showLogin"
-                                                       class="btnLink">
-                                                      <span>New User?</span>&nbsp;Register
-                                                </v-btn>
-                                          </v-flex>
-                                    </v-layout>
-                              </v-layout>
-                        </v-form>
-
-                        <v-form v-if="!showLogin" key="register" @submit.prevent="register">
-                              <v-layout column>
-                                    <v-flex>
-                                          <v-text-field type="email" prepend-icon="email" label="Email"
-                                                        v-model="regUser.email"
-                                                        required></v-text-field>
-                                    </v-flex>
-
-                                    <v-flex>
-                                          <v-text-field prepend-icon="person" label="Username"
-                                                        v-model="regUser.username"
-                                                        required></v-text-field>
-                                    </v-flex>
-
-                                    <v-flex>
-                                          <v-text-field type="password" prepend-icon="lock" label="Password"
-                                                        v-model="regUser.password" required></v-text-field>
-                                    </v-flex>
-
-                                    <br>
-                                    <v-btn color="primary" type="submit">Register</v-btn>
-
-                                    <v-layout row>
-                                          <v-flex></v-flex>
-                                          <v-spacer></v-spacer>
-                                          <v-flex shrink>
-                                                <v-btn flat justify-end color="primary"
-                                                       @click="showLogin = !showLogin"
-                                                       class="btnLink">
-                                                      <span>Existing User?</span>&nbsp;Login
-                                                </v-btn>
-                                          </v-flex>
-                                    </v-layout>
-                              </v-layout>
-                        </v-form>
-                  </transition>
+  <v-container fluid fill-height class="login">
+    <v-layout class="pa-3" justify-center column>
+      <v-flex align-self-center shrink>
+        <img alt="Vue logo" width="80px" class="logo" src="../../assets/logo.png">
+      </v-flex>
+      <transition name="fade" mode="out-in" :duration="300">
+        <v-form v-if="showLogin" key="login" @submit.prevent="login">
+          <v-layout column>
+            <v-layout row justify-center>
+              <v-flex md4>
+                <v-text-field prepend-icon="person" label="Email" v-model="loginUser.email"
+                              required></v-text-field>
+              </v-flex>
             </v-layout>
-      </v-container>
+            <v-layout row justify-center>
+              <v-flex md4>
+                <v-text-field type="password" prepend-icon="lock" label="Password"
+                              v-model="loginUser.password" required></v-text-field>
+              </v-flex>
+            </v-layout>
+            <br>
+            <v-layout row justify-center>
+              <v-flex md4>
+                <v-btn type="submit" color="primary" block>
+                  Login
+                </v-btn>
+                <br>
+                <small>Email: oluseyer@gmail.com<br>Password: 123456</small>
+                <br>
+                <small>or create a new user account</small>
+                <v-layout row justify-end>
+                  <v-flex shrink>
+                    <v-btn flat justify-end color="primary"
+                           @click="showLogin = !showLogin"
+                           class="btnLink">
+                      <span>New User?</span>&nbsp;Register
+                    </v-btn>
+                  </v-flex>
+                </v-layout>
+              </v-flex>
+            </v-layout>
+            <!--<br>-->
+          
+          </v-layout>
+        </v-form>
+        
+        <v-form v-if="!showLogin" key="register" @submit.prevent="register">
+          <v-layout column>
+            <v-layout row justify-center>
+              <v-flex md4>
+                <v-text-field type="email" prepend-icon="email" label="Email"
+                              v-model="regUser.email"
+                              required></v-text-field>
+              </v-flex>
+            </v-layout>
+            
+            <v-layout row justify-center>
+              <v-flex md4>
+                <v-text-field prepend-icon="person" label="Username"
+                              v-model="regUser.username"
+                              required></v-text-field>
+              </v-flex>
+            </v-layout>
+            
+            <v-layout row justify-center>
+              <v-flex md4>
+                <v-text-field type="password" prepend-icon="lock" label="Password"
+                              v-model="regUser.password" required></v-text-field>
+              </v-flex>
+            </v-layout>
+            
+            <br>
+            <v-layout row justify-center>
+              <v-flex md4>
+                <v-btn color="primary" type="submit" block>Register</v-btn>
+                <v-layout justify-end>
+                  <v-flex shrink>
+                    <v-btn flat justify-end color="primary"
+                           @click="showLogin = !showLogin"
+                           class="btnLink">
+                      <span>Existing User?</span>&nbsp;Login
+                    </v-btn>
+                  </v-flex>
+                </v-layout>
+              </v-flex>
+            </v-layout>
+          </v-layout>
+        </v-form>
+      </transition>
+    </v-layout>
+  </v-container>
 </template>
 
 <script>
@@ -101,6 +119,8 @@
                 }
 
                 this.loader().show();
+                this.loginUser.email = this.loginUser.email.trim();
+                
                 firebase.auth().signInWithEmailAndPassword(this.loginUser.email, this.loginUser.password)
                     .then((user) => {
                         this.authUser(firebase.auth().currentUser);
@@ -216,19 +236,19 @@
 </script>
 
 <style scoped>
-      .login {
-            /*margin-top: 20px;*/
-      }
-
-      .btnLink {
-            text-transform: capitalize;
-      }
-
-      .btnLink span {
-            color: #fff;
-      }
-
-      .logo {
-            margin-bottom: 20px;
-      }
+  .login {
+    /*margin-top: 20px;*/
+  }
+  
+  .btnLink {
+    text-transform: capitalize;
+  }
+  
+  .btnLink span {
+    color: #fff;
+  }
+  
+  .logo {
+    margin-bottom: 20px;
+  }
 </style>

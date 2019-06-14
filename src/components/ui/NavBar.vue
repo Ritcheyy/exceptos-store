@@ -38,14 +38,14 @@
                                     </v-card-title>
 
                                     <v-card-text>
-                                          Swag store is a basic e-commerce,<br>
+                                          Exceptos Swag store is a basic opensource e-commerce PWA,<br>
                                           Built with VueJS, Vuetify, VueX and Firebase...<br>
                                           <br>
                                           Please note that all products, prices and pictures are dummies...<br>
                                           <br>
                                           <br>
-                                          <a href="https://github.com/RitcheyDevs/swag-store">Github:
-                                                https://github.com/RitcheyDevs/swag-store</a><br>
+                                          <a href="https://github.com/Ritcheyy/exceptos-store" target="_blank">Github:
+                                                https://github.com/Ritcheyy/exceptos-store</a><br>
                                           Star, Fork, pull and contribute<br>
                                           <br>
                                           <span class="text-right">- Ritchey✌</span>
@@ -97,7 +97,7 @@
             </v-navigation-drawer>
             <v-toolbar app fixed clipped-left>
                   <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
-                  <v-toolbar-title>Swags Store</v-toolbar-title>
+                  <v-toolbar-title>Exceptos Store</v-toolbar-title>
                   <v-spacer></v-spacer>
                   <v-btn flat icon to="/cart" v-show="this.$store.getters.isAuth" class="cart">
                         <v-icon>shopping_cart</v-icon>

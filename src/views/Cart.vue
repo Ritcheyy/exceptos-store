@@ -8,9 +8,16 @@
                           v-model="dialog"
                           width="500"
                   >
-                        <template v-slot:activator="{ on }">
+                        <template v-slot:activator="{ on }" v-if="items.length > 0">
                               <v-container>
                                     <v-btn block color="primary" v-on="on" class="mt-3">Checkout</v-btn>
+                              </v-container>
+                        </template>
+      
+                        <template v-slot:activator="{ on }" v-else>
+                              <v-container>
+                                    <h2>You haven't added anything to your cart!<br>
+                                          <router-link to="/store">Wanna go back to store?</router-link></h2>
                               </v-container>
                         </template>
 
@@ -28,7 +35,7 @@
                                     You can check back later for more features.👌
                                     <br>
                                     <br>
-                                    <a href="https://github.com/RitcheyDevs/swag-store">Github: https://github.com/RitcheyDevs/swag-store</a><br>
+                                    <a href="https://github.com/Ritcheyy/exceptos-store" target="_blank">Github: https://github.com/Ritcheyy/exceptos-store</a><br>
                                     Star, Fork, Pull and Contribute<br>
                                     <span class="text-right">- Ritchey✌</span>
                                     <br>

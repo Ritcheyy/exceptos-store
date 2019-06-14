@@ -1,5 +1,5 @@
-# Swags Store
-https://exceptos-store.firebaseapp.com
+# Exceptos Swags Store
+https://store.exceptos.com
 
 <br>Swag store is a basic e-commerce PWA,<br>
                   Built with VueJS, Vuetify, VueX and Firebase...<br>
